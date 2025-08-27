@@ -17,10 +17,10 @@ export default function Header() {
                 {/* Logo */}
                 <div className="flex items-center gap-2">
                     <Image
-                        src="/logo/gadac-logo.png"
+                        src="/logo/1.png"
                         alt="GADAC Logo"
-                        width={70}
-                        height={70}
+                        width={150}
+                        height={100}
                         className="rounded"
                     />
                 </div>
@@ -127,7 +127,7 @@ export default function Header() {
                             Contact
                         </Link>
 
-                        <Button className="bg-blue-900 text-white font-semibold rounded-2xl px-4 py-2 hover:bg-[#E6C200]">
+                        <Button className="bg-blue-900 text-white font-semibold text-2xl rounded-2xl px-4 py-2 hover:bg-[#E6C200]">
                             Demander un devis
                         </Button>
                     </motion.nav>
