@@ -13,7 +13,7 @@ export default function Testimonials() {
             role: "Directrice RH, Entreprise X",
             feedback:
                 "GADAC nous a accompagnés avec professionnalisme et écoute. Leur méthodologie a eu un impact concret sur nos projets.",
-            image: "/images/avatar1.jpg",
+            image: "/images/testimonial/1.jpg",
         },
 
         {
@@ -21,21 +21,21 @@ export default function Testimonials() {
             role: "CEO, Startup Y",
             feedback:
                 "Une équipe engagée, innovante et à l’écoute. Grâce à eux, nous avons pu accélérer notre transformation digitale.",
-            image: "/images/avatar2.jpg",
+            image: "/images/testimonial/2.jpg",
         },
         {
             name: "Fatou Ndiaye",
             role: "Directrice RH, Entreprise X",
             feedback:
                 "GADAC nous a accompagnés avec professionnalisme et écoute. Leur méthodologie a eu un impact concret sur nos projets.",
-            image: "/images/avatar1.jpg",
+            image: "/images/testimonial/1.jpg",
         },
         {
             name: "Awa Diop",
             role: "Consultante indépendante",
             feedback:
                 "J’ai apprécié leur approche collaborative et la qualité du suivi. GADAC est un partenaire de confiance.",
-            image: "/images/avatar3.jpg",
+            image: "/images/testimonial/1.jpg",
         },
     ];
 

@@ -4,6 +4,7 @@ import AboutGADAC from './components/home/About';
 import Services from './components/home/Services';
 import NotreApproche from './components/home/NotreApproche';
 import Testimonials from './components/home/Testimonials';
+import ScrollToTop from './components/public/ScrollToTop';
 
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Services />
       <NotreApproche />
       <Testimonials />
+      <ScrollToTop />
     </main>
   );
 }

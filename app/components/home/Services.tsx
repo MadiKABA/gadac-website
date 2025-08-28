@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const services = [
     {
@@ -55,12 +56,10 @@ const services = [
     },
 ];
 
-
 export default function ServicesTabs() {
     const [activeTab, setActiveTab] = useState(services[0]);
 
     return (
-
         <section className="relative isolate bg-white py-8 sm:py-20">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 {/* Titre section */}
@@ -74,26 +73,26 @@ export default function ServicesTabs() {
                     </p>
                 </div>
 
-                <div className="mt-10 overflow-x-auto custom-scroll">
-                    <div className="flex gap-4 min-w-max border-b border-gray-200 pb-2">
-                        {services.map((s) => (
-                            <button
-                                key={s.id}
-                                onClick={() => setActiveTab(s)}
-                                className={`whitespace-nowrap rounded-full px-5 py-2 text-sm font-semibold transition ${activeTab.id === s.id
-                                        ? "bg-blue-900 text-white"
-                                        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                                    }`}
-                            >
-                                {s.title}
-                            </button>
-                        ))}
+                {/* Tabs scrollables */}
+                <div className="relative mt-10">
+                    
+                    <div className="overflow-x-auto custom-scroll">
+                        <div className="flex gap-4 min-w-max border-b border-gray-200 pb-2">
+                            {services.map((s) => (
+                                <button
+                                    key={s.id}
+                                    onClick={() => setActiveTab(s)}
+                                    className={`whitespace-nowrap rounded-full px-5 py-2 text-sm font-semibold transition ${activeTab.id === s.id
+                                            ? "bg-blue-900 text-white"
+                                            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                                        }`}
+                                >
+                                    {s.title}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                 </div>
-
-
-
-
 
                 {/* Contenu service actif */}
                 <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
@@ -107,10 +106,12 @@ export default function ServicesTabs() {
                             transition={{ duration: 0.5 }}
                             className="overflow-hidden rounded-2xl shadow-lg"
                         >
-                            <img
+                            <Image
                                 src={activeTab.image}
                                 alt={activeTab.title}
-                                className="w-full h-72 object-cover lg:h-[400px]"
+                                width={600}
+                                height={400}
+                                className="w-full h-80 object-cover"
                             />
                         </motion.div>
                     </AnimatePresence>
