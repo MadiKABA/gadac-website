@@ -10,7 +10,7 @@ const services = [
         title: "Conseil & Stratégie",
         description:
             "Nous accompagnons les entreprises et institutions dans la définition, la planification et la mise en œuvre de stratégies de croissance et de transformation. Notre approche repose sur une analyse approfondie du contexte, l’identification des leviers de performance et la proposition de solutions sur mesure pour assurer un impact durable.",
-        image: "/images/services/conseil.jpg",
+        image: "/images/services/Conseil-Stratégie.jpg",
         link: "/services/conseil",
     },
     {
@@ -18,7 +18,7 @@ const services = [
         title: "Études & Ingénierie",
         description:
             "Nos équipes réalisent des études de faisabilité, des diagnostics organisationnels et des analyses sectorielles pour éclairer la prise de décision. Nous proposons également des solutions techniques et opérationnelles adaptées aux réalités locales, tout en intégrant les meilleures pratiques internationales.",
-        image: "/images/services/etudes.jpg",
+        image: "/images/services/etudes-engenierie.jpg",
         link: "/services/etudes",
     },
     {
@@ -26,7 +26,7 @@ const services = [
         title: "Digital & Transformation",
         description:
             "Nous aidons les organisations à tirer parti du digital pour optimiser leurs processus, améliorer leur productivité et renforcer leur compétitivité. De la mise en place de solutions numériques innovantes à l’accompagnement du changement organisationnel, nous favorisons une transformation digitale inclusive et durable.",
-        image: "/images/services/digital.jpg",
+        image: "/images/services/Digital-Transformation.jpg",
         link: "/services/digital",
     },
     {
@@ -34,7 +34,7 @@ const services = [
         title: "Formation & Renforcement des capacités",
         description:
             "Nous concevons et animons des programmes de formation adaptés aux besoins des équipes, en mettant l’accent sur le transfert de compétences et l’apprentissage pratique. Notre objectif est de renforcer les capacités individuelles et collectives afin de préparer les organisations à relever efficacement les défis actuels et futurs.",
-        image: "/images/services/formation.jpg",
+        image: "/images/services/Formation-Renforcement-des-capacités.jpg",
         link: "/services/formation",
     },
     {
@@ -42,7 +42,7 @@ const services = [
         title: "Développement durable & RSE",
         description:
             "Nous accompagnons les acteurs publics et privés dans l’intégration des principes de durabilité et de responsabilité sociétale dans leurs activités. Qu’il s’agisse de politiques RSE, d’initiatives vertes ou de projets à fort impact social, nous favorisons des approches équilibrées entre performance économique et responsabilité environnementale et sociale.",
-        image: "/images/services/durable.jpg",
+        image: "/images/services/Developpement-durable-RSE.jpg",
         link: "/services/durable",
     },
     {
@@ -50,7 +50,7 @@ const services = [
         title: "Références / Projets",
         description:
             "À travers nos projets réalisés avec divers partenaires, nous mettons en avant notre savoir-faire et notre capacité à répondre à des enjeux complexes. Cette section évolutive présentera des études de cas, des missions réussies et des témoignages illustrant la valeur ajoutée de notre expertise.",
-        image: "/images/services/projets.jpg",
+        image: "/images/services/References-Projets.jpg",
         link: "/services/projets",
     },
 ];
