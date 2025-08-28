@@ -1,3 +1,4 @@
+import Footer from "./components/public/Footer";
 import Header from "./components/public/Header";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="bg-gray-50 dark:bg-gray-950">
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
