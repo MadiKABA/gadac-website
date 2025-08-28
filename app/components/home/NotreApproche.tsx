@@ -49,10 +49,12 @@ export default function NotreApproche() {
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         className="flex flex-col justify-center"
                     >
-                        <div className="mb-4 h-1 w-12 rounded-full bg-[#C9A227]" />
-                        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        <h2 className="flex items-center gap-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                            <span className="h-1.5 w-10 rounded-full bg-[#C9A227]" />
                             Notre approche
+
                         </h2>
+
                         <p className="mt-4 text-md text-white leading-relaxed">
                             Une méthodologie collaborative et durable, conçue pour accompagner
                             vos projets de bout en bout avec rigueur, innovation et impact.

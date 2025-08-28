@@ -65,7 +65,7 @@ export default function ServicesTabs() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 {/* Titre section */}
                 <div className="text-center max-w-2xl mx-auto">
-                    <h2 className="flex items-center justify-center gap-3 text-3xl font-bold tracking-tight text-[#0A1F44] sm:text-4xl">
+                    <h2 className="flex items-center justify-center gap-3 text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl">
                         <span className="h-1.5 w-10 rounded-full bg-[#C9A227]" />
                         Nos services
                     </h2>
@@ -124,7 +124,7 @@ export default function ServicesTabs() {
                             exit={{ opacity: 0, x: 30 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <h3 className="text-2xl font-bold text-[#0A1F44]">
+                            <h3 className="text-2xl font-bold text-blue-800">
                                 {activeTab.title}
                             </h3>
                             <p className="mt-4 text-gray-600 text-base leading-relaxed">

@@ -129,8 +129,8 @@ export default function AboutGADAC({
                             id="about-gadac-title"
                             className="flex items-center gap-3 text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl"
                         >
-                            {heading}
                             <span className="h-1.5 w-10 rounded-full bg-[#C9A227]" />
+                            {heading}
                         </h2>
                         <p
                             className="mt-4 text-base leading-7 text-gray-700"
