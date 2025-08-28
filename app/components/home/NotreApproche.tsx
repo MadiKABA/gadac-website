@@ -3,6 +3,10 @@
 import { motion } from "framer-motion";
 import { Search, Users, Rocket, TrendingUp } from "lucide-react";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function NotreApproche() {
     const steps = [
@@ -77,27 +81,56 @@ export default function NotreApproche() {
                     </motion.div>
                 </div>
 
-
                 {/* Étapes */}
-                <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-                    {steps.map((step, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: i * 0.2 }}
-                            className="flex flex-col items-center text-center px-6"
+                <div className="mt-16">
+                    {/* Mobile : Carousel Swiper */}
+                    <div className="lg:hidden">
+                        <Swiper
+                            spaceBetween={20}
+                            slidesPerView={1}
+                            pagination={{ clickable: true }}
+                            modules={[Pagination]}
+                            className="pb-10"
                         >
-                            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#C9A227] shadow-lg mb-4">
-                                {step.icon}
-                            </div>
-                            <h3 className="text-lg font-semibold text-white">
-                                {step.title}
-                            </h3>
-                            <p className="mt-2 text-sm text-gray-300">{step.description}</p>
-                        </motion.div>
-                    ))}
+                            {steps.map((step, i) => (
+                                <SwiperSlide key={i}>
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 30 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.5, delay: i * 0.2 }}
+                                        className="rounded-2xl bg-white/10 p-6 text-center shadow-lg backdrop-blur-sm hover:bg-white/20 transition"
+                                    >
+                                        <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#C9A227] shadow-lg mx-auto mb-4">
+                                            {step.icon}
+                                        </div>
+                                        <h3 className="text-lg font-semibold text-white">{step.title}</h3>
+                                        <p className="mt-2 text-sm text-gray-200">{step.description}</p>
+                                    </motion.div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+
+                    {/* Desktop : grid */}
+                    <div className="hidden lg:grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                        {steps.map((step, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: i * 0.2 }}
+                                className="flex flex-col items-center text-center rounded-2xl bg-white/10 p-6 shadow-lg hover:bg-white/20 transition"
+                            >
+                                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#C9A227] shadow-lg mb-4">
+                                    {step.icon}
+                                </div>
+                                <h3 className="text-lg font-semibold text-white">{step.title}</h3>
+                                <p className="mt-2 text-sm text-gray-200">{step.description}</p>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
