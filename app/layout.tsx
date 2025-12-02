@@ -19,10 +19,14 @@ export const metadata: Metadata = {
     "consulting Sénégal",
     "cabinet de conseil Afrique",
   ],
-  authors: [{ name: "Groupe ADA Consulting", url: "https://gadac.com" }],
-  metadataBase: new URL("https://gadac.com"), // 👈 remplace par ton domaine
+  authors: [{ name: "Groupe ADA Consulting", url: "https://www.groupeadaconsulting.com/" }],
+  metadataBase: new URL("https://www.groupeadaconsulting.com/"), // 👈 remplace par ton domaine
   alternates: {
-    canonical: "https://gadac.com",
+    canonical: "https://www.groupeadaconsulting.com/",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png", // Ajoutez cette image (180x180px)
   },
   openGraph: {
     type: "website",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
       "Expertise en conseil, études, digital, formation et développement durable en Afrique.",
     images: [
       {
-        url: "https://gadac.com/logo.png", // 👈 mets une image 1200x630
+        url: "https://www.groupeadaconsulting.com//logo.png", // 👈 mets une image 1200x630
         width: 1200,
         height: 630,
         alt: "GADAC - Groupe ADA Consulting",
@@ -48,7 +52,7 @@ export const metadata: Metadata = {
     title: "GADAC | Groupe ADA Consulting",
     description:
       "Cabinet de conseil en stratégie, digital, études, formation et RSE.",
-    images: ["https://gadac.com/logo.png"], // même que l’OG
+    images: ["https://www.groupeadaconsulting.com//logo.png"], // même que l’OG
   },
   robots: {
     index: true,

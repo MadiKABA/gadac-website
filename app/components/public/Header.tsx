@@ -17,7 +17,7 @@ export default function Header() {
                 {/* Logo */}
                 <div className="flex items-center gap-2">
                     <Image
-                        src="/logo/1.png"
+                        src="/logo..jpeg"
                         alt="GADAC Logo"
                         width={150}
                         height={100}
